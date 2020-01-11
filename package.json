@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sebug/probabilistic-2020/issues"
   },
-  "homepage": "https://github.com/sebug/probabilistic-2020#readme"
+  "homepage": "https://github.com/sebug/probabilistic-2020#readme",
+  "devDependencies": {
+    "webppl": "^0.9.15"
+  }
 }
