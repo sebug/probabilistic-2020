@@ -1,0 +1,1 @@
+sample(Bernoulli({ p: 0.5 }));
