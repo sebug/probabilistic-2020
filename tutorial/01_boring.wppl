@@ -1,0 +1,7 @@
+var foo = function (x) {
+    var bar = Math.exp(x);
+    var baz = x == 0 ? [] : [Math.log(bar), foo(x - 1)];
+    return baz;
+};
+
+foo(5);
