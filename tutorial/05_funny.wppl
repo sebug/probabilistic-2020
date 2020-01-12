@@ -1,0 +1,12 @@
+var funnyBinomial = function () {
+    var a = sample(Bernoulli({ p: 0.5 }));
+    var b = sample(Bernoulli({ p: 0.5 }));
+    var c = sample(Bernoulli({ p: 0.5 }));
+
+    factor( (a || b) ? 0 : -2 );
+    return a + b + c;
+};
+
+var funnyBinomialDist = Infer({ model: funnyBinomial });
+
+funnyBinomialDist;
