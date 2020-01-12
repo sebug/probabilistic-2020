@@ -1,0 +1,17 @@
+var _sample = function (dist) {
+    return dist.support()[0];
+};
+
+var ExploreFirst = function (comp) {
+    return comp();
+};
+
+var binomial = function () {
+    var a = _sample(Bernoulli({ p: 0.5 }));
+    var b = _sample(Bernoulli({ p: 0.5 }));
+    var c = _sample(Bernoulli({ p: 0.5 }));
+
+    return a + b + c;
+};
+
+ExploreFirst(binomial);
